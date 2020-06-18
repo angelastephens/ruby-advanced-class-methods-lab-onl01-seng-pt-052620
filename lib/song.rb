@@ -52,6 +52,7 @@ end
   end
   
   def self.create_from_filename
-    
+    self.new_by_name(name).save
+  end
   
 end
