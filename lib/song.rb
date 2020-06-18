@@ -51,7 +51,7 @@ end
     self.all.clear
   end
   
-  def self.create_from_filename
+  def self.create_from_filename(name)
     self.new_by_name(name).save
   end
   
