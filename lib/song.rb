@@ -55,6 +55,7 @@ end
     song = self.new
     song.name = name
     self.new_by_name(name).save
+    song
   end
   
 end
