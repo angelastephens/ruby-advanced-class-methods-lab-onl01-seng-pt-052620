@@ -43,7 +43,7 @@ end
   def self.new_from_filename(file_name)
     song=self.new
     @file_name=file_name
-    song.artist_name, song.name = @file_name.delete_suffix(".mp3").split("-")
+    song.artist_name, song.name = @file_name.delete_suffix(".mp3").split(" - ")
     song
   end
   
