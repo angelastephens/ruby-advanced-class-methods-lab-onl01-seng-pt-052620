@@ -51,7 +51,12 @@ end
     self.all.clear
   end
   
- 
+ def self.create_from_filename(file_name)
+    song=self.create
+    @file_name=file_name
+    song.artist_name, song.name = @file_name.delete_suffix(".mp3").split(" - ")
+    song
+  end
 
   
 end
