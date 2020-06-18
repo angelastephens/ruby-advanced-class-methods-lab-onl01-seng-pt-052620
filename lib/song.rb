@@ -51,11 +51,7 @@ end
     self.all.clear
   end
   
-  def self.create_from_filename(name)
-    song = self.new
-    song.name = name
-    self.new_by_name(name).save
-    song
-  end
+ 
+
   
 end
